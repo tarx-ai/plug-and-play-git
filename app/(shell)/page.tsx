@@ -1,4 +1,5 @@
 import EnvLinks from "@/components/EnvLinks";
+import CanvasDemo from "@/components/CanvasDemo";
 
 export default function Home() {
   return (
@@ -8,6 +9,9 @@ export default function Home() {
         <p className="text-sm text-zinc-400">Your AI-powered workspace is ready.</p>
       </div>
       <EnvLinks />
+      <div className="mt-8">
+        <CanvasDemo />
+      </div>
     </main>
   );
 }
