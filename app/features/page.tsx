@@ -102,6 +102,28 @@ const Features: NextPage = () => {
                         </div>
                     </div>
 
+                    <section id="ui" className="mt-16 text-center">
+                        <div className="h3 mb-4">User Interface</div>
+                        <p className="body1 text-n-4 max-w-2xl mx-auto mb-8">
+                            TARX provides a clean, intuitive interface designed for developers. Every interaction is crafted 
+                            to keep you in flow state while building amazing products.
+                        </p>
+                        <div className="grid gap-6 mt-8 md:grid-cols-2">
+                            <div className="p-6 rounded-xl bg-n-6/50 border border-n-5">
+                                <h4 className="h5 mb-3">Terminal Integration</h4>
+                                <p className="body2 text-n-3">
+                                    Native terminal commands and shortcuts that feel like extensions of your existing workflow.
+                                </p>
+                            </div>
+                            <div className="p-6 rounded-xl bg-n-6/50 border border-n-5">
+                                <h4 className="h5 mb-3">Context Panel</h4>
+                                <p className="body2 text-n-3">
+                                    Visual context management with drag-and-drop file organization and project memory.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
                     <div className="mt-16 text-center">
                         <div className="h3 mb-4">Getting Started</div>
                         <p className="body1 text-n-4 max-w-2xl mx-auto mb-8">
