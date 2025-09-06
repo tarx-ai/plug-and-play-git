@@ -1,7 +1,5 @@
 "use client";
 
-import ChatPanelWithTools from "@/components/ai/ChatPanelWithTools";
-
 export default function McpToolsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-zinc-900 to-black p-6">
@@ -14,7 +12,9 @@ export default function McpToolsPage() {
         </div>
 
         <div className="bg-zinc-900/50 rounded-xl border border-zinc-800 p-6">
-          <ChatPanelWithTools placeholder="Try: 'Show me the database schema' or 'List GitHub repos'" />
+          <div className="text-center text-zinc-400">
+            <p>MCP Tools integration coming soon...</p>
+          </div>
         </div>
 
         <div className="mt-8 grid md:grid-cols-2 gap-6">

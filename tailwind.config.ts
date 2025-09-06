@@ -27,6 +27,8 @@ const config: Config = {
                 // Design System Colors
                 bg: "var(--color-bg)",
                 fg: "var(--color-fg)",
+                background: "var(--color-bg)",
+                foreground: "var(--color-fg)",
                 muted: "var(--color-muted)",
                 "ds-primary": {
                     DEFAULT: "var(--color-primary)",
@@ -45,6 +47,8 @@ const config: Config = {
                     muted: "var(--color-text-muted)",
                     subtle: "var(--color-text-subtle)",
                 },
+                // Additional semantic colors for compatibility
+                ring: "var(--color-primary)",
                 destructive: "var(--color-destructive)",
                 success: "var(--color-success)",
                 warning: "var(--color-warning)",

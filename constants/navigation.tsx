@@ -6,9 +6,15 @@ export const navigation = [
         url: "/dashboard",
     },
     {
+        title: "Ops",
+        icon: "settings",
+        color: "fill-accent-2",
+        url: "/ops",
+    },
+    {
         title: "Chats",
         icon: "chat",
-        color: "fill-accent-2",
+        color: "fill-accent-3",
         url: "/",
     },
     {
@@ -20,7 +26,7 @@ export const navigation = [
     {
         title: "Settings",
         icon: "settings",
-        color: "fill-accent-3",
+        color: "fill-accent-4",
         url: "/settings",
     },
 ];
