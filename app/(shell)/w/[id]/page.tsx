@@ -1,11 +1,10 @@
-import type { NextPage } from "next";
-import Main from "@/templates/WorkspacePage/Main";
-
 type Props = { params: { id: string } };
 
-const WorkspaceById: NextPage<Props> = ({ params }) => {
-    return <Main />;
-};
-
-export default WorkspaceById;
-
+export default function Workspace({ params }: Props) {
+  return (
+    <main style={{ padding: 24 }}>
+      <h2>Workspace: {params.id}</h2>
+      <p>This is the {params.id} workspace.</p>
+    </main>
+  );
+}
