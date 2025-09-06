@@ -1,20 +1,8 @@
-import type { NextPage } from "next";
-import Main from "@/templates/HomePage/Main";
-import dynamic from "next/dynamic";
-
-const ChatPanel = dynamic(() => import("@/components/ai/ChatPanel"), {
-    ssr: false,
-});
-
-const Home: NextPage = () => {
-    return (
-        <>
-            <Main />
-            <div style={{ padding: 24 }}>
-                <ChatPanel />
-            </div>
-        </>
-    );
-};
-
-export default Home;
+export default function Home() {
+  return (
+    <main style={{padding:24}}>
+      <h1>Welcome to TARX</h1>
+      <p>Your AI-powered workspace is ready.</p>
+    </main>
+  );
+}

@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = { 
   reactStrictMode: true,
-  webpack: (config) => {
-    if (config.cache) config.cache = false; // avoid ENOSPC
-    return config;
+  webpack: (config) => { 
+    if (config.cache) config.cache = false; 
+    return config; 
   },
 };
 
