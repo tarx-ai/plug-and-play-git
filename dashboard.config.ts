@@ -18,6 +18,7 @@ export const project = {
       { label: "UI Primitives", href: "/features#ui" },
     ],
     rAndD: [
+      { label: "MCP Tools", href: "/mcp-tools" },
       { label: "Code Gen", href: "/code-generation" },
       { label: "Photo Editing", href: "/photo-editing" },
       { label: "Video Gen", href: "/video-generation" },
