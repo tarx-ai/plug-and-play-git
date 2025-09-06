@@ -1,0 +1,172 @@
+/* Design System Tokens */
+:root[data-theme="light"] {
+  /* Colors */
+  --color-bg: #FEFEFE;
+  --color-fg: #141718;
+  --color-muted: #6C7275;
+  --color-primary: #92B6DE;
+  --color-primary-hover: #7ea5d1;
+  --color-border: #E8ECEF;
+  --color-border-hover: #6C7275;
+  --color-input: #F3F5F7;
+  --color-accent: #0084FF;
+  --color-destructive: #D84C10;
+  --color-success: #3FDD78;
+  --color-warning: #DDA73F;
+  
+  /* Semantic Colors */
+  --color-card: #FEFEFE;
+  --color-popover: #FEFEFE;
+  --color-selection: rgba(146, 182, 222, 0.1);
+  
+  /* Typography */
+  --color-text: #141718;
+  --color-text-muted: #6C7275;
+  --color-text-subtle: #9CA3AF;
+  
+  /* Radius - Super Rounded Aesthetic */
+  --radius: 0.75rem;      /* 12px - default cards, panels */
+  --radius-sm: 0.5rem;    /* 8px - buttons, inputs */
+  --radius-lg: 1rem;      /* 16px - larger cards */
+  --radius-xl: 1.5rem;    /* 24px - modals, sections */
+  --radius-2xl: 2rem;     /* 32px - super rounded */
+  --radius-3xl: 3rem;     /* 48px - extreme rounded */
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 32px 64px rgba(0, 0, 0, 0.16);
+  
+  /* Spacing Scale */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+}
+
+:root[data-theme="dark"] {
+  /* Colors */
+  --color-bg: #0b0d10;
+  --color-fg: #e5e7eb;
+  --color-muted: #9ca3af;
+  --color-primary: #92B6DE;
+  --color-primary-hover: #a5c5e3;
+  --color-border: #343839;
+  --color-border-hover: #6C7275;
+  --color-input: #232627;
+  --color-accent: #3FDD78;
+  --color-destructive: #D84C10;
+  --color-success: #3FDD78;
+  --color-warning: #DDA73F;
+  
+  /* Semantic Colors */
+  --color-card: #141718;
+  --color-popover: #232627;
+  --color-selection: rgba(146, 182, 222, 0.2);
+  
+  /* Typography */
+  --color-text: #e5e7eb;
+  --color-text-muted: #9ca3af;
+  --color-text-subtle: #6C7275;
+}
+
+:root[data-theme="tarx"] {
+  /* Tarx Brand Theme - builds on dark base */
+  --color-primary: #92B6DE;
+  --color-primary-hover: #a5c5e3;
+  --color-accent: #8E55EA;
+  --color-bg: #0a0a0f;
+  --color-card: #121218;
+  --color-popover: #1a1a22;
+  --color-border: #2a2a35;
+  --color-selection: rgba(142, 85, 234, 0.2);
+}
+
+/* Typography Scale */
+:root {
+  /* Display Scale */
+  --font-size-display-2xl: 4rem;
+  --line-height-display-2xl: 4.5rem;
+  --font-size-display-xl: 3rem;
+  --line-height-display-xl: 3.5rem;
+  --font-size-display-lg: 2.5rem;
+  --line-height-display-lg: 3rem;
+  
+  /* Heading Scale */
+  --font-size-h1: 2rem;
+  --line-height-h1: 2.5rem;
+  --font-size-h2: 1.75rem;
+  --line-height-h2: 2.25rem;
+  --font-size-h3: 1.5rem;
+  --line-height-h3: 2rem;
+  --font-size-h4: 1.25rem;
+  --line-height-h4: 1.75rem;
+  
+  /* Body Scale */
+  --font-size-body-lg: 1.125rem;
+  --line-height-body-lg: 1.75rem;
+  --font-size-body: 1rem;
+  --line-height-body: 1.5rem;
+  --font-size-body-sm: 0.875rem;
+  --line-height-body-sm: 1.25rem;
+  
+  /* Utility Scale */
+  --font-size-subtle: 0.75rem;
+  --line-height-subtle: 1rem;
+  --font-size-code: 0.8125rem;
+  --line-height-code: 1.125rem;
+}
+
+/* Focus Ring */
+:root {
+  --focus-ring: 0 0 0 2px var(--color-primary);
+  --focus-ring-offset: 0 0 0 2px var(--color-bg), 0 0 0 4px var(--color-primary);
+}
+
+/* Animation */
+:root {
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  --easing: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Component Tokens */
+:root {
+  --button-height: 2.5rem;
+  --button-height-sm: 2rem;
+  --button-height-lg: 3rem;
+  --button-padding-x: 1rem;
+  --button-padding-x-sm: 0.75rem;
+  --button-padding-x-lg: 1.5rem;
+  
+  --input-height: 2.5rem;
+  --input-padding-x: 0.75rem;
+  --input-border-width: 1px;
+  
+  --card-padding: 1.5rem;
+  --card-radius: var(--radius-lg);
+}
+
+/* Apply smooth transitions to theme changes */
+* {
+  transition: 
+    color var(--duration-normal) var(--easing),
+    background-color var(--duration-normal) var(--easing),
+    border-color var(--duration-normal) var(--easing),
+    box-shadow var(--duration-normal) var(--easing);
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

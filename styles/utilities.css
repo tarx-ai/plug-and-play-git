@@ -1,0 +1,29 @@
+/* TARX Brand Color Utilities */
+
+:root {
+  --brand: var(--color-primary-1, #007AFF);
+  --surface: var(--color-n-1, #FCFCFD);
+  --muted: var(--color-n-4, #8B94A7);
+  --ring: color-mix(in oklab, var(--brand) 45%, white);
+}
+
+[data-theme="dark"] {
+  --surface: var(--color-n-6, #0E1116);
+}
+
+/* Proposed action styling */
+.proposed {
+  background: color-mix(in oklab, var(--brand) 12%, transparent);
+  border-color: color-mix(in oklab, var(--brand) 30%, black);
+}
+
+.proposed-subtle {
+  background: color-mix(in oklab, var(--brand) 8%, transparent);
+  border-color: color-mix(in oklab, var(--brand) 20%, transparent);
+}
+
+/* Enhanced focus ring using brand color */
+.focus-brand {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
