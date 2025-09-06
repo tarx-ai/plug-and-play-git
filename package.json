@@ -28,6 +28,7 @@
     "autoprefixer": "^10.4.21",
     "classnames": "^2.5.1",
     "framer-motion": "^11.1.7",
+    "lovable-tagger": "^1.1.9",
     "next": "14.2.3",
     "rc-slider": "^10.1.1",
     "react": "^18",
