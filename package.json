@@ -6,6 +6,7 @@
     "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start -p 3000",
+    "build:dev": "next build",
     "lint": "next lint",
     "changes": "npx tsx scripts/gen-dashboard-changes.ts",
     "predev": "npm run changes || true",
