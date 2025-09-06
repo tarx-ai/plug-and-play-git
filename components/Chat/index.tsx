@@ -2,13 +2,23 @@
 
 import { useState } from "react";
 
-export default function Chat() {
+interface ChatProps {
+  title?: string;
+  children?: React.ReactNode;
+}
+
+export default function Chat({ title, children }: ChatProps) {
   const [message, setMessage] = useState("");
 
   return (
     <div className="p-4">
-      <h3 className="text-lg font-semibold mb-4">Chat</h3>
+      <h3 className="text-lg font-semibold mb-4">{title || "Chat"}</h3>
       <div className="space-y-4">
+        {children && (
+          <div className="space-y-2">
+            {children}
+          </div>
+        )}
         <div className="bg-gray-100 dark:bg-gray-800 p-3 rounded-lg">
           <p className="text-sm">Welcome to TARX Chat!</p>
         </div>
