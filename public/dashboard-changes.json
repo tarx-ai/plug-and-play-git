@@ -1,6 +1,23 @@
 {
-  "generatedAt": "2025-09-06T16:24:23.450Z",
+  "generatedAt": "2025-09-06T18:28:39.474Z",
   "items": [
+    {
+      "files": [],
+      "hash": "fe6578ab831956b6c731c8d5630962b2d312b5c3",
+      "date": "2025-09-06T13:25:48-05:00",
+      "author": "Tarx Dev",
+      "message": "chore: add build:dev for Lovable"
+    },
+    {
+      "files": [
+        "app/health/page.tsx",
+        "components/Chat/index.tsx"
+      ],
+      "hash": "f304c669630d99b87c3df5859de5c7f174b0908c",
+      "date": "2025-09-06T11:24:47-05:00",
+      "author": "Tarx Dev",
+      "message": "fix: prepare Next.js app for Lovable integration"
+    },
     {
       "files": [
         "app/_variants/[slug]/[variantId]/page.tsx",
